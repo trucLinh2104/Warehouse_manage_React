@@ -1,0 +1,39 @@
+#header{
+    height: var(--heigh-header);
+    background-color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 15px;
+}
+.logo img{
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    color:white;
+    gap:15px;
+    font-weight: 700;
+}   /*Nav*/
+.action-btn{
+    width: 30%;
+    display:flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap:30px
+
+}
+.notify-btn > img{
+    width: 30px;
+    height: 30px;
+}
+.logout-btn > img{
+    width: 25px;
+    height: 25px;
+}
