@@ -67,21 +67,10 @@
 input[type="date"]{
     width: 100%;
 }
-button{
-    border-radius: 20px !important;
-    display: inline-block;
-    height: 50px;
-    border-radius: 24.5px;
-    font-size: 16px;
-    font-weight: bold;
-    background: #0032af;
-    color: #fff;
-    border: none;
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-}
+
 .button{
-    min-width: 70%;
-    max-width: 80%;
+    width: 150px;
+    height: 50px;
 }
 
 .title{
@@ -104,7 +93,7 @@ button{
     position: absolute;
     z-index: 1;
     left: 10px;
-    top: 12px;
+    top: 10px;
 }
 input{
     border: none;
@@ -126,7 +115,7 @@ input{
     font-weight: bold;
     background-color: #97deff;;
     color: black;
-    font-size: 0.8rem;
+
     line-height: 40px;
     text-align: center;
     border: 1px solid #262626;
@@ -161,11 +150,7 @@ input{
     align-items: center;
     justify-content: center;
 }
-.grid-item >img{
-    padding: 10px;
-    width: 30px;
-    height: 30px;
-}
+
 /* Bo góc */
 .grid-header:first-child {
     border-top-left-radius: 10px;
@@ -194,7 +179,7 @@ input{
 .status{
     display: flex;
     height: 70%;
-    width: 50%;
+    width:80%;
     border-radius: 20px;
     justify-content: center;
     align-items: center;
@@ -209,4 +194,7 @@ input{
 
 .fresh{
     background-color: #00b05e;
+}
+.clickBtn:active{
+    transform: scale(0.95);
 }

@@ -21,8 +21,8 @@ function Navigation() {
 
     return (
         <>
-            <div className="main-nav">
-                <div className="avatar">
+            <div className="main-nav   pt-2.5 pb-2.5 pl-2.5 pr-2.5 flex flex-wrap justify-flexstart sticky top-0 gap-3.5 flex-col">
+                <div className="avatar h-15 flex justify-center items-center w-full mt-4">
                     <img src="./src/assets/image/avatar.jpg"
                          alt=""
                     />
@@ -66,7 +66,7 @@ function Navigation() {
                              alt=""
                         />
                         <a className="main-item"
-                           href="./manage.html"
+                           href="./warehouse-management"
                         > Quản lý kho</a>
                         <img src="./src/assets/icons/arrow.svg"
                              alt=""

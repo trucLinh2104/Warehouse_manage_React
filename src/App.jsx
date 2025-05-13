@@ -11,14 +11,15 @@ function App() {
     const routing = useRoutes(routes);
   return (
 
-    <>
-        <Header></Header>
-        <main>
-            <Navigation></Navigation>
-            {routing}
-        </main>
+      <>
+          <Header></Header>
+          <main>
+              <Navigation></Navigation>
+              {routing}
+          </main>
 
-    </>
+
+      </>
   )
 }
 
