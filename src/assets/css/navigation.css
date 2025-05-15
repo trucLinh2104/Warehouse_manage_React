@@ -1,14 +1,49 @@
 .main-nav{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    max-width: 250px;
-    min-width: 230px;
+    position: absolute;
+    width: 250px;
+    font-size: 0.8rem;
+    z-index: 300;
+    background-color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 100%;
+    display: none;
 }
+.openNav{
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .main-nav{
+        max-width: 250px;
+        min-width: 230px;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        position: sticky;
+        top: 0;
+        gap: 14px;
+        flex-direction: column;
+    }
+}
+
+.fadeIn{
+    animation: fadeIn 0.5s ease-out forwards;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(0); }
+    to   { opacity: 1; transform: translateY(0px); }
+}
+
 
 
 
 .main-nav a{
     text-decoration: none;
     color: var(--primary)
+
 }
 a:visited {
     color: var(--primary); /* Giữ nguyên màu, không đổi tím */
@@ -17,13 +52,12 @@ a:visited {
 
 }
 .avatar img{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    margin-right:20px;
+
 }
 .avatar >span{
-    font-size: 20px;
     font-weight: 300;
     color: var(--primary);
 }

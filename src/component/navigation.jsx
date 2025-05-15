@@ -21,12 +21,13 @@ function Navigation() {
 
     return (
         <>
-            <div className="main-nav   pt-2.5 pb-2.5 pl-2.5 pr-2.5 flex flex-wrap justify-flexstart sticky top-0 gap-3.5 flex-col">
-                <div className="avatar h-15 flex justify-center items-center w-full mt-4">
+            <div className="main-nav  fadeIn md:animate-none">
+                <div className="avatar h-15 flex items-center w-full mt-[10px] text-base gap-[25px] mb-[15px] ">
                     <img src="./src/assets/image/avatar.jpg"
                          alt=""
+                         className="w-[40px] h-[40px] object-cover lg:w-[50px] h-[50px]"
                     />
-                    <span>Nguyễn Văn A</span>
+                    <span>Nguyễn Văn A </span>
                 </div>
                 <hr />
                 <ul className="list-option">

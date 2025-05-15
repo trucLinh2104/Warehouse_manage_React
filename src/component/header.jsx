@@ -1,10 +1,25 @@
 import '../assets/css/header.css'
 function Header() {
-
+    const openMenu = (event) => {
+        let isClickIcon = event.target.classList.contains('menuIcon');
+        console.log(isClickIcon);
+        let menu = document.querySelector('.main-nav');
+        if (isClickIcon) {
+            menu.classList.toggle('openNav');
+        }
+    }
     return (
         <>
             <header>
-                <div id="header">
+                <div id="header" className="pl-[50px]">
+                    <div className=" menuIcon block absolute z-[999] left-[5px] "
+                         onClick={(event) => openMenu(event)}
+                    >
+                        <img src="./src/assets/icons/navigation.svg"
+                             alt=""
+                             className="w-[20px] h-auto object-cover menuIcon  filter invert"
+                        />
+                    </div>
                     <div className="logo">
                         <img className="transparent-effect"
                              src="./src/assets/image/logo.png"

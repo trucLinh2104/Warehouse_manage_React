@@ -2,6 +2,8 @@ import React, {useEffect, useRef, useState} from 'react';
 import '../assets/css/import-list.css';
 import { useNavigate } from 'react-router-dom';
 import BillDetailModal from '../component/bill-detail-modal.jsx';
+import Filter from '../component/filter.jsx';
+import {Filler} from 'chart.js';
 
 
 function ImportList() {
@@ -69,42 +71,44 @@ function ImportList() {
 
         <>
             <div className="main-content-query">
-                <div className="search-area p-[10px]">
-                    <div className="col">
-                        <div className="row">
-                            <p className="title">Mã sản phẩm</p>
-                            <input type="text" />
+                <Filter name={".search-area"}></Filter>
+                <div className=" search-area  lg:search-area-md gap-[10px] lg:gap-[20px] h-[330px] p-[5px] sm:pl-[20px] sm:pr-[20px]  ">
+                    <div className="w-full  flex flex-col  lg:w-[40%]  justify-evenly ">
+                        <div className="flex lg:flex-nowrap">
+                            <p className="title lg:text-[18px] w-[35%] lg:w-[32%] shrink-0">Mã sản phẩm</p>
+                            <input type="text" className="flex-1" />
                         </div>
 
-                        <div className="row">
-                            <p className="title">Tình trạng</p>
-                            <input type="text" />
+                        <div className="flex lg:flex-nowrap">
+                            <p className="title lg:text-[18px] w-[35%] lg:w-[32%] shrink-0">Tình trạng</p>
+                            <input type="text"  className="flex-1"/>
                         </div>
 
                     </div>
-                    <div className="col">
-                        <div className="row">
-                            <p className="title">Số lượng</p>
-                            <input type="text" />
+                    <div className="w-full  flex flex-col  lg:w-[40%]  justify-evenly mt-[-6%] md:mt-[-4%] lg:mt-0">
+                        <div className="flex lg:flex-nowrap">
+                            <p className="title lg:text-[18px] w-[35%] lg:w-[32%] shrink-0">Số lượng</p>
+                            <input type="text" className="flex-1" />
                         </div>
 
-                        <div className="row">
-                            <p className="title">Từ ngày</p>
+                        <div className="flex lg:flex-nowrap">
+                            <p className="title lg:text-[18px] w-[35%] lg:w-[32%] shrink-0">Từ ngày</p>
                             <input type="date"
                                    id="date"
+                                   className="flex-1"
                             />
                         </div>
                     </div>
-                    <div className="col">
-                        <div className="row">
-                            <button className="sm:w-[80%] md:text-[15px] lg:text-[0.8rem] clickBtn">Tìm kiếm</button>
-                        </div>
+                    <div className=" flex flex-1  items-center justify-end lg:justify-center ">
+                        <button className=" w-[30%] md:text-[15px] lg:text-[0.8rem] lg:w-[80%] clickBtn">Tìm
+                                                                                                                           kiếm
+                        </button>
+
                     </div>
                 </div>
 
                 <div className="button-import">
-
-                    <button className = "button clickBtn md:text-[15px] lg:text-[0.8rem]" onClick={() => directLink('/import-bill')}>
+                    <button className="button clickBtn md:text-[15px] lg:text-[0.8rem]" onClick={() => directLink('/import-bill')}>
                         <img src="./src/assets/icons/folder-import.svg"
                              alt="Nhập kho"
                         />
@@ -112,7 +116,7 @@ function ImportList() {
                     </button>
                 </div>
 
-                <div className="grid-container hidden md:grid md:text-[12px] lg:text-[0.9rem]">
+                <div className="grid-container  md:grid md:text-[12px] lg:text-[0.9rem]">
                     <div className="grid-header md:text-[10px] lg:text-[0.8rem]">STT</div>
                     <div className="grid-header md:text-[10px] lg:text-[0.8rem]">
                         Mã phiếu
