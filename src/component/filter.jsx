@@ -2,19 +2,20 @@ import React from 'react';
 import Navigation from './navigation.jsx';
 
 function Filter(element) {
-    let display_org = null;
 
-    const openFilter =async (event) => {
+
+    const openFilter = async (event) => {
+
         let isClickIcon = event.target.classList.contains('filterIcon');
+        console.log(isClickIcon);
         let modal = await document.querySelector(element.name);
-        if(display_org === null) {
-            display_org = modal.style.display;
-        }
         if (isClickIcon) {
-            modal.style.display = (modal.style.display === display_org) ? 'none' : display_org;
+            modal.style.display = modal.style.display === 'none' ? 'flex' : 'none';
         }
-    }
-    return(<>
+
+
+    };
+    return (<>
         <div className="openSearch-mobile flex justify-end ">
             <p className="text-[20px] font-semibold pr-[10px]">Tìm kiếm theo bộ lọc</p>
             <img src="./src/assets/icons/filter-2.svg"
@@ -24,6 +25,7 @@ function Filter(element) {
             />
         </div>
 
-    </>)
+    </>);
 }
-export default Filter
+
+export default Filter;
