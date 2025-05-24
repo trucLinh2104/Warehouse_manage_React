@@ -1,5 +1,5 @@
 import React from 'react';
-import Navigation from './navigation.jsx';
+import Navigation from '../Navigation/index.jsx';
 
 function Filter(element) {
 
@@ -18,7 +18,7 @@ function Filter(element) {
     return (<>
         <div className="openSearch-mobile flex justify-end ">
             <p className="text-[20px] font-semibold pr-[10px]">Tìm kiếm theo bộ lọc</p>
-            <img src="./src/assets/icons/filter-2.svg"
+            <img src="../src/assets/icons/filter-2.svg"
                  alt=""
                  className="w-[30px] h-auto object-cover filterIcon"
                  onClick={(event) => openFilter(event)}

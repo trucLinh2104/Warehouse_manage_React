@@ -10,6 +10,75 @@ html{
     font-family: Roboto;
 
 }
+.css-24nagu-MuiPaper-root-MuiCard-root{
+  overflow: auto !important;
+}
+
+.MuiToolbar-root.MuiToolbar-gutters.MuiToolbar-regular.css-1yqdigs-MuiToolbar-root {
+    background: rgb(80 147 255 / 23%) !important
+}
+
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation0.MuiDrawer-paper.MuiDrawer-paperAnchorLeft.MuiDrawer-paperAnchorDockedLeft.css-oc2eyy-MuiPaper-root-MuiDrawer-paper {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset !important;
+}
+
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation16.MuiDrawer-paper.MuiDrawer-paperAnchorBottom.css-deycfo-MuiPaper-root-MuiDrawer-paper
+{
+    height: calc(70% - 56px) !important;
+}
+
+.css-mixvc8 {
+    background-color: #fff;
+    padding-top: calc(2 * var(--mui-spacing));
+}
+
+button{
+    border-radius: 999px !important;
+
+}
+
+
+.MuiBox-root.css-sw5c23 {
+    padding-top: 0 !important;
+}
+
+button.MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMedium.MuiButton-textSizeMedium.MuiButton-colorPrimary.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMedium.MuiButton-textSizeMedium.MuiButton-colorPrimary.css-r75yrr-MuiButtonBase-root-MuiButton-root {
+    width: 150px;
+    font-size: 100%;
+}
+
+.MuiBox-root.css-ece9u5 {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    margin-left: 22px ;
+
+}
+.MuiBox-root.css-1mpjt4o {
+    flex: 1 1 100%;
+}
+.MuiFormControl-root.MuiTextField-root.css-1xp5r68-MuiFormControl-root-MuiTextField-root {
+    margin: 0;
+    width: 100%;
+
+}
+#outlined-basic{
+    box-shadow: none !important;
+}
+
+.css-yknggq-MuiPaper-root{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset !important;
+}
+.MuiTablePagination-actions >button{
+
+    margin: 10px !important;
+    height: 25px !important;
+
+}
+
+.css-1kih386-MuiButtonBase-root-MuiTableSortLabel-root.Mui-active .MuiTableSortLabel-icon,.css-1kih386-MuiButtonBase-root-MuiTableSortLabel-root.Mui-active{
+    color:#fff !important;
+}
 
 @media (min-width: 640px){
     html{
@@ -27,11 +96,14 @@ html{
     html{
         font-size:1.2rem ;
     }
+
 }
 @media (min-width: 1280px){
     html{
         font-size:1.2rem ;
     }
+
+
 }
 @media (min-width: 1530px){
     html{

@@ -1,24 +1,11 @@
-
-import { useRoutes } from 'react-router-dom';
-import Header from './component/header.jsx';
-import Navigation from './component/navigation.jsx';
-import routes from './router/router.jsx';
 import './App.css'
-import './assets/css/main.css'
+import './component/Main/index.css'
+import DashboardLayoutBasic from './component/Dashboard/index.jsx';
 
 function App() {
-
-    const routing = useRoutes(routes);
-  return (
-
+    return (
       <>
-          <Header></Header>
-          <main>
-              <Navigation></Navigation>
-              {routing}
-          </main>
-
-
+          <DashboardLayoutBasic></DashboardLayoutBasic>
       </>
   )
 }

@@ -23,7 +23,6 @@ main{
 }
 
 .main-content{
-    width:100%;
     height: calc(100% - 140px);
     border: var(--color-primary) 1px solid;
     padding:10px;
@@ -38,7 +37,6 @@ main{
 
 .main-content-query{
     width: 100%;
-    height: calc(100% - 40px);
     background-color: white;
     gap:20px;
     flex-direction: column;
@@ -50,19 +48,7 @@ main{
     position: relative;
     box-sizing: border-box;
 }
-@media (min-width: 1200px) {
-    .main-content {
-        width: 70%;
-        transform: translateX(6.5%);
-    }
-}
 
-@media (min-width: 1600px) {
-    .main-content {
-        width: 70%;
-        transform: translateX(10%);
-    }
-}
 input{
     padding:10px;
 }
@@ -73,7 +59,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 input[type="date"] {
     padding-left: 10px;
     padding-right: 5px;
-    background-image: url("../icons/calendar.svg");
+    background-image: url("../../assets/icons/calendar.svg");
     background-repeat: no-repeat;
     background-position: right 4px center;
 

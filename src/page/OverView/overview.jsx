@@ -1,7 +1,8 @@
 import React from 'react';
-import CricleChart from '../component/cricle-chart.jsx';
-import '../assets/css/overview.css';
-import TableCustom from '../component/table-custom.jsx';
+import CricleChart from '../../component/chart/index.jsx';
+import './overview.css';
+import Index from '../../component/Table/index.jsx';
+import ButtonUsage from '../../component/Button/index.jsx';
 function Overview() {
  const data = {
         datasets: [
@@ -34,7 +35,7 @@ function Overview() {
                                 <div className="box-item-title sm:text-sm sm:text-center">
                                     Tỉ lệ xuất - nhập kho
                                 </div>
-                                <div className="container">
+                                <div className="flex items-center mt-[15px] gap-[15px]">
                                     <CricleChart data={data} />
                                     <div className="legend">
                                         <div className="legend-item">

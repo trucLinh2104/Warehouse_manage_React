@@ -1,0 +1,12 @@
+.add-area input{
+    border: none;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+.add-area > .MuiFormControl-root.MuiTextField-root.css-1xp5r68-MuiFormControl-root-MuiTextField-root +.MuiFormControl-root.MuiTextField-root.css-1xp5r68-MuiFormControl-root-MuiTextField-root {
+    margin-top: 30px !important;
+}
+.add-area  .MuiBox-root.css-ece9u5{
+    margin-top: 30px !important;
+    margin-left: 0px !important;
+}

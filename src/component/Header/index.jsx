@@ -1,5 +1,5 @@
-import '../assets/css/header.css'
-function Header() {
+import './index.css'
+function Index() {
     const openMenu = (event) => {
         let isClickIcon = event.target.classList.contains('menuIcon');
         console.log(isClickIcon);
@@ -45,4 +45,4 @@ function Header() {
     )
 }
 
-export default Header
+export default Index

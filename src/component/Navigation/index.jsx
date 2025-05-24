@@ -1,4 +1,4 @@
-import '../assets/css/navigation.css'
+import './index.css'
 
 import { useNavigate } from 'react-router-dom';
 function Navigation() {
@@ -53,7 +53,7 @@ function Navigation() {
 
                             >Xuất - Nhập</a>
                             <ul className="sub-item">
-                                <li className="sub-item1"><a href="./list-export-page.html">Xuất</a></li>
+                                <li className="sub-item1"><a href="./export-list">Xuất</a></li>
                                 <li className="sub-item2"><a href="./import-list">Nhập</a></li>
                             </ul>
                         </div>
