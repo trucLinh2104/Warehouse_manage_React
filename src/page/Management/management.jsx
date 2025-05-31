@@ -5,7 +5,44 @@ import BasicTextFields from '../../component/Input/index.jsx';
 import BasicSelect from '../../component/select/index.jsx';
 
 function WarehouseManagement() {
+    const columns = [
+        {
+            id: 'type_no',
+            numeric: true,
+            disablePadding: true,
+            align: 'left',
+            label: 'Mã loại',
+        },
+        {
+            id: 'type_name',
+            numeric: true,
+            align: 'right',
+            disablePadding: false,
+            label: 'Tên loại',
+        },
+        {
+            id: 'count',
+            numeric: true,
+            align: 'right',
+            disablePadding: false,
+            label: 'Tổng SP',
+        },
+        {
+            id: 'desc',
+            numeric: false,
+            align: 'right',
+            disablePadding: false,
+            label: 'Mô tả sản phẩm',
+        },
 
+        {
+            id: 'Image',
+            align: 'right',
+            numeric: false,
+            disablePadding: false,
+            label: 'Image',
+        },
+    ];
 
     return (<>
         <div className="p-[20px]">
@@ -15,7 +52,7 @@ function WarehouseManagement() {
                 <BasicTextFields></BasicTextFields>
 
             </div>
-            <EnhancedTable></EnhancedTable>
+            <EnhancedTable cols={columns}></EnhancedTable>
             <div className="flex justify-end">
                 <button className="p-[20px] flex items-center">Xuất kho</button>
             </div>

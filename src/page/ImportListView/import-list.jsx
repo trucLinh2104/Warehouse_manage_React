@@ -303,14 +303,14 @@ function ImportList() {
                 >
                     <div className="w-full  flex flex-col  lg:w-[40%]  justify-evenly ">
                         <div className="flex lg:flex-nowrap">
-                            <p className="title lg:text-[18px] w-[35%] lg:w-[25%] shrink-0">Mã Sp</p>
+                            <p className="title lg:text-[18px] w-[35%] lg:w-[30%] shrink-0">Mã Sp</p>
                             <input type="text"
                                    className="flex-1 w-[10px]"
                             />
                         </div>
 
                         <div className="flex lg:flex-nowrap">
-                            <p className="title lg:text-[18px] w-[35%] lg:w-[25%] shrink-0">Tình trạng</p>
+                            <p className="title lg:text-[18px] w-[35%] lg:w-[30%] shrink-0">Tình trạng</p>
                             <input type="text"
                                    className="flex-1 w-[10px]"
                             />
@@ -319,14 +319,14 @@ function ImportList() {
                     </div>
                     <div className="w-full  flex flex-col  lg:w-[40%]  justify-evenly mt-[-6%] sm:mt-[-30px] md:mt-[-3%] lg:mt-[2px]">
                         <div className="flex lg:flex-nowrap">
-                            <p className="title lg:text-[18px] w-[35%] lg:w-[25%] shrink-0">Số lượng</p>
+                            <p className="title lg:text-[18px] w-[35%] lg:w-[30%] shrink-0">Số lượng</p>
                             <input type="text"
                                    className="flex-1 w-[10px]"
                             />
                         </div>
 
                         <div className="flex lg:flex-nowrap">
-                            <p className="title lg:text-[18px] w-[35%] lg:w-[25%] shrink-0">Từ ngày</p>
+                            <p className="title lg:text-[18px] w-[35%] lg:w-[30%] shrink-0">Từ ngày</p>
                             <input type="date"
                                    id="date"
                                    className="flex-1 w-[10px]"

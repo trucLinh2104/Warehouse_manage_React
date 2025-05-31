@@ -37,7 +37,7 @@ const StickyHeadTable = ({columns, data}) => {
         fun(...value)
     }
     return (
-        <Paper sx={{ width: '100%' }}>
+        <Paper sx={{ height:'40%', width: '100%' }}>
             <TableContainer sx={{ maxHeight: 440 }}>
                 <Table stickyHeader aria-label="sticky table">
                     <TableHead sx={{bgcolor: 'transparent'}}>
